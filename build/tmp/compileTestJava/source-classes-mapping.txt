@@ -1,0 +1,2 @@
+com/mdwohl/codefellowship/CodeFellowshipApplicationTests.java
+ com.mdwohl.codefellowship.CodeFellowshipApplicationTests

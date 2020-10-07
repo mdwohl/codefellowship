@@ -4,10 +4,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class HomeController {
-    @GetMapping("/")
-    public String renderHomepage(){
-//        System.out.println("Rendering homepage");
-        return "home";
+public class ErrorController {
+    @GetMapping("/error")
+    public String getErrorPage(){
+        return "error";
     }
 }

@@ -5,10 +5,15 @@
     <title>Title</title>
 </head>
 <body>
+
+<header>
+    <h1 th:fragment="displayname" th:if = "${Principal}" th:text="${Principal.getName()}"></h1>
+</header>
+
 <nav th:fragment = "navbar" class="navbar">
     <a href="login">Login</a>
     <a href="signup">Sign Up</a>
-    <a href="userdetails">View User Details</a>
+    <a href="userdetail">View User Details</a>
     <a href="/perform_logout">Logout</a>
 </nav>
 </body>

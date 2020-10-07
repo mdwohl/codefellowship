@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <nav th:replace = "~{fragments :: navbar}"></nav>
+<header th:replace="~{fragments :: displayname}"></header>
+
+<h1>Welcome to Code Fellowship!</h1>
+<p>Code Fellowship provides resources for aspiring devs to network and commiserate
+    as they ascend the jagged, frozen peaks of Code Mountain.</p>
+<p>Please log in, or create an account.</p>
 </body>
 </html>

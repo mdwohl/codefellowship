@@ -3,6 +3,7 @@ package com.mdwohl.codefellowship.controllers;
 import com.mdwohl.codefellowship.models.user.ApplicationUser;
 import com.mdwohl.codefellowship.models.user.ApplicationUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,6 +12,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.view.RedirectView;
+
+import java.security.Principal;
 
 @Controller
 @RequestMapping(value="/testPath")
@@ -47,7 +50,8 @@ public class ApplicationUserController {
 //    }
 
     @GetMapping("/login")
-    public String login (){
+    public String login (Principal p, Model m){
+        m.addAttribute("Principal", p);
         return "login";
     }
 }

@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<h2>Hello, you're at the detail page.</h2>
-<h3 th:text = "${displayedUser.username}"></h3>
-<h4 th:text = "${displayedUser.lastName}"></h4>
+<nav th:replace = "~{fragments :: navbar}"></nav>
+<header th:replace="~{fragments :: displayname}"></header>
+
+<h2>Welcome! Your account details are displayed below.</h2>
+<h3 th:text = "'Username: ' + ${displayedUser.username}"></h3>
+<p th:text = "'First Name: ' + ${displayedUser.firstName}"></p>
+<p th:text = "'Last Name: ' + ${displayedUser.lastName}"></p>
+<p th:text = "'Date of Birth: ' + ${displayedUser.dob}"></p>
+<p th:text = "'About Me: ' + ${displayedUser.bio}"></p>
+
+
 </body>
 </html>

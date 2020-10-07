@@ -4,8 +4,10 @@ com/mdwohl/codefellowship/CodeFellowshipApplication.java
  com.mdwohl.codefellowship.CodeFellowshipApplication
 com/mdwohl/codefellowship/models/user/UserDetailsRepository.java
  com.mdwohl.codefellowship.models.user.UserDetailsRepository
-com/mdwohl/codefellowship/configs/WebSecurityConfig.java
- com.mdwohl.codefellowship.configs.WebSecurityConfig
+com/mdwohl/codefellowship/models/user/ApplicationUserRepository.java
+ com.mdwohl.codefellowship.models.user.ApplicationUserRepository
+com/mdwohl/codefellowship/controllers/ErrorController.java
+ com.mdwohl.codefellowship.controllers.ErrorController
 com/mdwohl/codefellowship/configs/UserDetailsServiceImpl.java
  com.mdwohl.codefellowship.configs.UserDetailsServiceImpl
 com/mdwohl/codefellowship/controllers/UserController.java
@@ -14,7 +16,5 @@ com/mdwohl/codefellowship/controllers/ApplicationUserController.java
  com.mdwohl.codefellowship.controllers.ApplicationUserController
 com/mdwohl/codefellowship/models/user/ApplicationUser.java
  com.mdwohl.codefellowship.models.user.ApplicationUser
-com/mdwohl/codefellowship/models/user/ApplicationUserRepository.java
- com.mdwohl.codefellowship.models.user.ApplicationUserRepository
-com/mdwohl/codefellowship/controllers/ErrorController.java
- com.mdwohl.codefellowship.controllers.ErrorController
+com/mdwohl/codefellowship/configs/WebSecurityConfig.java
+ com.mdwohl.codefellowship.configs.WebSecurityConfig

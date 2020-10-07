@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en", xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav th:replace = "~{fragments :: navbar}"></nav>
+
+<h2>Hello, you're at the detail page.</h2>
+<h3 th:text = "${displayedUser.username}"></h3>
+<h4 th:text = "${displayedUser.lastName}"></h4>
+</body>
+</html>

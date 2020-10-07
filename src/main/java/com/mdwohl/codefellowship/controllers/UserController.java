@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.view.RedirectView;
 
 import java.security.Principal;
+import java.sql.Date;
 
 @Controller
 public class UserController {
@@ -28,7 +29,7 @@ public class UserController {
                                    @RequestParam String password,
                                    @RequestParam String firstName,
                                    @RequestParam String lastName,
-                                   @RequestParam int dob,
+                                   @RequestParam Date dob,
                                    @RequestParam String bio) {
 
         password = passwordEncoder.encode(password);

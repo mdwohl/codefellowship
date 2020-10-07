@@ -1,5 +1,6 @@
 package com.mdwohl.codefellowship.models.user;
 
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -7,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.sql.Date;
 import java.util.Collection;
 
 @Entity
@@ -15,15 +17,15 @@ public class ApplicationUser implements UserDetails{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    long id;
-    String username;
-    String password;
-    String firstName;
-    String lastName;
-    int dob;
-    String bio;
+    public long id;
+    public String username;
+    public String password;
+    public String firstName;
+    public String lastName;
+    public Date dob;
+    public String bio;
 
-    public ApplicationUser(String username, String password, String firstName, String lastName, int dob, String bio) {
+    public ApplicationUser(String username, String password, String firstName, String lastName, Date dob, String bio) {
         this.username = username;
         this.password = password;
         this.firstName = firstName;
@@ -62,7 +64,7 @@ public class ApplicationUser implements UserDetails{
 
     @Override
     public boolean isEnabled(){
-        return false;
+        return true;
     }
 
     @Override

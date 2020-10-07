@@ -8,6 +8,7 @@
 </head>
 <body>
 <nav th:replace = "~{fragments :: navbar}"></nav>
+<header th:replace="~{fragments :: displayname}"></header>
 
 <h2>Welcome to the homepage. Please create your account.</h2>
 <form method="POST" action="/signup">
@@ -15,7 +16,7 @@
     <input type="text" placeholder="Password" name="password">
     <input type="text" placeholder="First Name" name="firstName">
     <input type="text" placeholder="Last Name" name="lastName">
-    <input type="number" placeholder="Date of Birth" name="dob">
+    <input type="date" placeholder="Date of Birth" name="dob">
     <input type="text" placeholder="Bio" name="bio">
     <button type="submit">Create your account</button>
 </form>

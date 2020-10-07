@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Error</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<H1>You've reached this page because of an error.</H1>
+<nav th:replace = "~{fragments :: navbar}"></nav>
+<header th:replace="~{fragments :: displayname}"></header>
+<H2>You've reached this page because of an error.</H2>
 <table>
     <tr>
         <td>Date</td>
